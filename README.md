@@ -13,5 +13,5 @@ npm i
 ## Usage
 
 ```bash
-npm start
+npm run client
 ```
