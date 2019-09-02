@@ -120,7 +120,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Posts(props) {
+const Posts = (props) => {
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('calories');
@@ -133,13 +133,13 @@ export default function Posts(props) {
 
   const htmlEntities = new Html5Entities();
 
-  function handleRequestSort(event, property) {
+  const handleRequestSort = (event, property) => {
     const isDesc = orderBy === property && order === 'desc';
     setOrder(isDesc ? 'asc' : 'desc');
     setOrderBy(property);
   }
 
-  function handleSelectAllClick(event) {
+  const handleSelectAllClick = (event) => {
     if (event.target.checked) {
       const newSelecteds = data.map(n => n.name);
       setSelected(newSelecteds);
@@ -148,11 +148,11 @@ export default function Posts(props) {
     setSelected([]);
   }
 
-  function handleChangePage(event, newPage) {
+  const handleChangePage = (event, newPage) => {
     setPage(newPage);
   }
 
-  function handleChangeRowsPerPage(event) {
+  const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   }
@@ -261,3 +261,5 @@ export default function Posts(props) {
     </div>
   );
 }
+
+export default Posts;
