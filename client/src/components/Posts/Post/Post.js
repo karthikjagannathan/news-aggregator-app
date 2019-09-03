@@ -43,10 +43,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Post(props) {
+const Post = (props) => {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
-  const { title, description, link, contentType, content, imageUrl, click } = props;
+  const { title, description, link, imageUrl, click } = props;
   const htmlEntities = new Html5Entities();
   const defaultImageUrl = "https://material-ui.com/static/images/cards/contemplative-reptile.jpg";
 
@@ -83,3 +83,5 @@ export default function Post(props) {
       </Card>
   );
 }
+
+export default Post;
