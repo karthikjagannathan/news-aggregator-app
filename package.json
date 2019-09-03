@@ -10,8 +10,8 @@
     "build:client:serve": "npm run build:client && npm run start",
     "dev": "concurrently --kill-others-on-fail \"node server\" \"npm client\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Karthik Jagannathan",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "html-entities": "^1.2.1",

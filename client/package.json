@@ -17,6 +17,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "author": "Karthik Jagannathan",
+  "license": "MIT",
   "eslintConfig": {
     "extends": "react-app"
   },
