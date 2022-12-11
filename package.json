@@ -13,7 +13,7 @@
   "author": "Karthik Jagannathan",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "html-entities": "^1.2.1",
     "path": "^0.12.7"
   }
